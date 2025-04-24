@@ -46,10 +46,10 @@ preloadImages(images, () => {
   // Set initial image and start slideshow
   bg1.style.backgroundImage = `url(${images[currentIndex]})`;
   bg1.classList.add("opacity-100");
-  setInterval(updateBackground, 5000);
+  setInterval(updateBackground, 3000);
 });
 // Auto-change every 5s
-setInterval(updateBackground, 5000);
+setInterval(updateBackground, 3000);
 
 // Initialize first image
 bg1.style.backgroundImage = `url(${images[currentIndex]})`;
@@ -66,51 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextImage = document.getElementById("nextImage");
   const closeModal = document.getElementById("closeModal");
   const INITIAL_VISIBLE = 8;
-
-  const toggleButton = document.getElementById("toggleAbout");
-  const aboutContent = document.getElementById("about-content");
-
-  if (toggleButton && aboutContent) {
-    // Function to update content state based on screen size
-    function updateContentState() {
-      if (window.innerWidth < 768) {
-        // Mobile: Collapse content, show button
-        aboutContent.classList.add("max-h-0", "overflow-hidden");
-        aboutContent.classList.remove("max-h-[1000px]", "max-h-full");
-        toggleButton.setAttribute("aria-expanded", "false");
-        toggleButton.textContent = "Прикажи повеке";
-      } else {
-        // Desktop: Expand content, hide button
-        aboutContent.classList.remove("max-h-0", "overflow-hidden");
-        aboutContent.classList.add("max-h-full");
-        toggleButton.setAttribute("aria-expanded", "true");
-      }
-    }
-
-    // Initialize state on load
-    updateContentState();
-
-    // Toggle button click handler
-    toggleButton.addEventListener("click", () => {
-      const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
-      if (isExpanded) {
-        aboutContent.classList.add("max-h-0", "overflow-hidden");
-        aboutContent.classList.remove("max-h-[1000px]");
-        toggleButton.setAttribute("aria-expanded", "false");
-        toggleButton.textContent = "Прикажи повеке";
-      } else {
-        aboutContent.classList.remove("max-h-0", "overflow-hidden");
-        aboutContent.classList.add("max-h-[1000px]");
-        toggleButton.setAttribute("aria-expanded", "true");
-        toggleButton.textContent = "Прикажи помалку";
-      }
-    });
-
-    // Update state on resize
-    window.addEventListener("resize", () => {
-      updateContentState();
-    });
-  }
 
   async function loadImages() {
     try {
@@ -292,4 +247,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+
 });
+
+function toggleText() {
+  const moreText = document.getElementById('more-text');
+  const button = document.getElementById('toggle-button');
+
+  const isHidden = moreText.classList.contains('hidden');
+
+  if (isHidden) {
+    moreText.classList.remove('hidden');
+    button.textContent = 'Прикажи помалку';
+  } else {
+    moreText.classList.add('hidden');
+    button.textContent = 'Прикажи повеќе';
+  }
+}

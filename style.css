@@ -13,7 +13,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
-    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -322,17 +321,8 @@
   .h-screen {
     height: 100vh;
   }
-  .max-h-0 {
-    max-height: calc(var(--spacing) * 0);
-  }
   .max-h-\[80vh\] {
     max-height: 80vh;
-  }
-  .max-h-\[1000px\] {
-    max-height: 1000px;
-  }
-  .max-h-full {
-    max-height: 100%;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -355,9 +345,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-3xl {
-    max-width: var(--container-3xl);
-  }
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
@@ -379,9 +366,6 @@
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -654,10 +638,6 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
-  }
   .duration-1000 {
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
@@ -838,11 +818,6 @@
   .md\:max-h-\[50vh\] {
     @media (width >= 48rem) {
       max-height: 50vh;
-    }
-  }
-  .md\:max-h-full {
-    @media (width >= 48rem) {
-      max-height: 100%;
     }
   }
   .md\:max-w-screen-xl {
@@ -1070,29 +1045,6 @@
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
     color: var(--color-darkbrown);
-  }
-  .about-content {
-    max-height: calc(var(--spacing) * 0);
-    overflow: hidden;
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
-    @media (width >= 48rem) {
-      display: block;
-    }
-    @media (width >= 48rem) {
-      max-height: 100%;
-    }
-  }
-  .about-content.max-h-0 {
-    max-height: calc(var(--spacing) * 0);
-    overflow: hidden;
-  }
-  .about-content.max-h-\[1000px\] {
-    max-height: 1000px;
-    overflow: visible;
   }
   .gallery-item {
     transition-property: opacity;

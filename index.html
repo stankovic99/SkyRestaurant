@@ -255,33 +255,33 @@
         </h2>
         <div class="title-line"></div>
       </div>
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-4xl mx-auto">
+        <!-- First paragraph (always shown) -->
         <p class="text-dark opacity-60 font-mulish italic text-lg md:text-xl leading-relaxed">
           Добре дојдовте во Sky Restaurant and Pool Bar, скриен бисер сместен во мирното село Мирковци, на само неколку
           чекори од Скопје. Она што започна како скромна визија во 2021 година прерасна во живописна дестинација каде
           вкусната храна, освежителните пијалоци и летните вибрации се спојуваат во совршена хармонија.
         </p>
-        <div id="about-content"
-          class="about-content max-h-0 overflow-hidden md:max-h-full md:block transition-all duration-500">
-          <p class="text-dark opacity-60 font-mulish italic text-lg md:text-xl leading-relaxed">
-            Основан од Виктор, вреден ентузијаст со страст за создавање незаборавни искуства, првичниот концепт - тогаш
-            наречен Sky Vibe - беше коктел бар наменет да донесе допир на софистицираност за младите и енергични. Но,
-            амбицијата и посветеноста на Виктор го трансформираа овој простор во полноправен ресторан со голем базен,
-            место каде секој може да ужива во уникатна комбинација од релаксација и гастрономско задоволство.<br>
-            Денес, Sky Restaurant and Pool Bar нуди многу повеке од само пијалоци - нашето мени е исполнето со вкусни
-            јадења подготвени со љубов, од свежи салати до раскошни десерти, додека базенот додава допир на летна магија
-            за сите наши гости. Без разлика дали сте тука да се опуштите покрај водата, да уживате во семеен ручек или
-            да се забавувате со пријателите под ѕвездите, ние сме посветени да ви понудиме врвни услуги и топла
-            атмосфера.<br>
-            Нашата приказна е доказ за тоа што може да се постигне со труд, креативност и желба да се создаде нещо
-            посебно. Придружете ни се во Sky Restaurant and Pool Bar и бидете дел от ова вкусно патување кое продолжува
-            да расте и да инспирира!
-          </p>
-        </div>
-        <button id="toggleAbout" 
-        class="mt-12 mx-auto px-6 py-3 uppercase tracking-wide rounded-full bg-dark text-white transition-all duration-300 hover:scale-105 block md:hidden"
-          aria-expanded="false" aria-controls="about-content">
-          Прикажи повеке
+      
+        <!-- Second paragraph: hidden on small screens by default -->
+        <p id="more-text" class="hidden text-dark opacity-60 font-mulish italic text-lg md:text-xl md:block leading-relaxed">
+          Основан од Виктор, вреден ентузијаст со страст за создавање незаборавни искуства, првичниот концепт - тогаш
+          наречен Sky Vibe - беше коктел бар наменет да донесе допир на софистицираност за младите и енергични. Но,
+          амбицијата и посветеноста на Виктор го трансформираа овој простор во полноправен ресторан со голем базен,
+          место каде секој може да ужива во уникатна комбинација од релаксација и гастрономско задоволство.<br>
+          Денес, Sky Restaurant and Pool Bar нуди многу повеке од само пијалоци - нашето мени е исполнето со вкусни
+          јадења подготвени со љубов, од свежи салати до раскошни десерти, додека базенот додава допир на летна магија
+          за сите наши гости. Без разлика дали сте тука да се опуштите покрај водата, да уживате во семеен ручек или
+          да се забавувате со пријателите под ѕвездите, ние сме посветени да ви понудиме врвни услуги и топла
+          атмосфера.<br>
+          Нашата приказна е доказ за тоа што може да се постигне со труд, креативност и желба да се создаде нещо
+          посебно. Придружете ни се во Sky Restaurant and Pool Bar и бидете дел от ова вкусно патување кое продолжува
+          да расте и да инспирира!
+        </p>
+      
+        <!-- Toggle button: shown only on small screens -->
+        <button id="toggle-button" class="mt-12 mx-auto px-6 py-3 uppercase tracking-wide rounded-full bg-dark text-white transition-all duration-300 hover:scale-105 block md:hidden" onclick="toggleText()">
+          Прикажи повеќе
         </button>
       </div>
     </div>
@@ -314,7 +314,7 @@
         </div>
 
         <div class="w-full lg:w-1/2 text-left">
-          <h3 class="text-3xl font-playfair text-dark mb-4">Sky restaurant and pool bar</h3>
+          <h3 class="text-3xl font-playfair text-dark mb-4">Sky Restaurant And Pool Bar</h3>
           <div class="space-y-4">
             <p>
               <span class="info-title">Адреса:</span><br>
