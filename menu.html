@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мени | Sky Restaurant & Pool Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="menu.js" defer></script>
+</head>
+<body class="bg-lightbrown flex flex-col min-h-screen">
+  <nav id="navbar" class="fixed top-0 w-full z-50 text-lightbrown bg-dark" role="navigation" aria-label="Main navigation">
+    <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-4">
+      <a href="#home" class="w-16 h-full"><img src="img/Logo.svg" alt="Logo"></a>
+
+      <ul class="hidden lg:flex items-center justify-center uppercase font-light tracking-widest gap-8 h-14">
+        <li><a href="index.html#home" class="px-2 hover:underline hover:underline-offset-8">Почетна</a></li>
+        <li><a href="index.html#services" class="px-2 hover:underline hover:underline-offset-8">Услуги</a></li>
+        <li><a href="index.html#gallery" class="px-2 hover:underline hover:underline-offset-8">Галерија</a></li>
+        <li><a href="index.html#about" class="px-2 hover:underline hover:underline-offset-8">За нас</a></li>
+        <li><a href="index.html#contact" class="px-2 hover:underline hover:underline-offset-8">Контакт</a></li>
+      </ul>
+      <button id="hamburger" class="lg:hidden h-14">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <ul id="mobile-menu"
+      class="absolute uppercase tracking-widest top-auto left-0 w-full bg-dark text-white text-center hidden transition">
+      <li><a href="index.html#home" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Почетна</a></li>
+      <li><a href="index.html#services" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Услуги</a></li>
+      <li><a href="index.html#gallery" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Галерија</a></li>
+      <li><a href="index.html#about" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">За нас</a></li>
+      <li><a href="index.html#contact" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Контакт</a></li>
+    </ul>
+  </nav>
+  <!-- <nav id="navbar" class="fixed top-0 w-full z-50 text-lightbrown bg-dark" role="navigation" aria-label="Main navigation">
+    <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-4">
+      <a href="#home" class="w-16 h-full"><img src="img/Logo.svg" alt="Logo"></a>
+            
+            <ul class="hidden lg:flex items-center justify-center uppercase font-light tracking-widest gap-8 h-14">
+                <li><a href="#home" class="px-2 hover:underline hover:underline-offset-8">Почетна</a></li>
+                <li><a href="#services" class="px-2 hover:underline hover:underline-offset-8">Услуги</a></li>
+                <li><a href="#gallery" class="px-2 hover:underline hover:underline-offset-8">Галерија</a></li>
+                <li><a href="#about" class="px-2 hover:underline hover:underline-offset-8">За нас</a></li>
+                <li><a href="#contact" class="px-2 hover:underline hover:underline-offset-8">Контакт</a></li>
+            </ul>
+            <button id="hamburger" class="lg:hidden h-14" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <ul id="mobile-menu" class="absolute uppercase tracking-widest top-auto left-0 w-full bg-dark text-white text-center hidden transition" aria-hidden="true">
+            <li><a href="#home" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Почетна</a></li>
+            <li><a href="#services" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Услуги</a></li>
+            <li><a href="#gallery" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Галерија</a></li>
+            <li><a href="#about" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">За нас</a></li>
+            <li><a href="#contact" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Контакт</a></li>
+        </ul>
+    </nav> -->
+
+
+  <section class="lg:pt-24 py-16 text-center flex-1">
+    <div class="md:max-w-screen-xl w-full mx-auto px-4">
+      <p class="subtitle text-center">мени</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 class="title">
+          Избор
+        </h2>
+        <div class="title-line"></div>
+      </div>
+      <div id="categoryTabs"
+        class="w-full shadow-lg bg-white rounded-lg p-4 mb-8 flex justify-center items-center gap-4">
+        <button data-type="food"
+          class="flex flex-col items-center px-6 py-4 text-lg font-playfair border-b-4 border-white text-darkbrown  hover:border-b-4 hover:border-darkbrown/80 transition-colors active-tab">
+          <img src="img/food.png" alt="Food category icon" class="w-12 h-12 mb-2">
+          Храна
+        </button>
+        <button data-type="drinks"
+          class="flex flex-col items-center px-6 py-4 text-lg font-playfair border-b-4 border-white text-darkbrown  hover:border-b-4 hover:border-darkbrown/80 transition-colors">
+          <img src="img/drinks.png" alt="Drinks category icon" class="w-12 h-12 mb-2">
+          Пијалоци
+        </button>
+      </div>
+      <!-- Subcategory Scroll -->
+      <div class="flex flex-row justify-between items-center md:gap-8 gap-2 mb-8">
+        <button id="scrollLeft"
+          class="left-0 top-1/2 transform text-darkbrown hover:text-darkbrown/80 transition-colors z-10">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <div id="subcategoryScroll" class="flex overflow-x-scroll scroll-smooth gap-2 hide-scrollbar">
+          <!-- Subcategories will be dynamically inserted here -->
+        </div>
+        <button id="scrollRight"
+          class=" right-0 top-1/2 transform  text-darkbrown hover:text-darkbrown/80 transition-colors z-10">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4 text-center text-sm md:text-base">
+    <p>© 2025 Sky Restaurant and Pool bar. Сите права задржани.</p>
+  </footer>
+</body>
+
+</html>
