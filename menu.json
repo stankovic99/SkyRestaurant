@@ -2,111 +2,94 @@
   "food": {
     "Појадок": [
       { "name": "Омлет", "description": "3 јајца", "price": 100, "image": "horizontal1.png" },
-      { "name": "Скај појадок за двајца", "description": "крем, мармалад, кајмак, сирење 100гр., пршут, кулен, печеница, лепиња, јајца на око, 2 кафиња гратис", "price": 500, "image": "caesar.jpg" },
-      { "name": "Додатоци", "description": "кашкавал 50гр., сирење 50гр., сланина 30гр.", "price": 40, "image": "greek-salad.jpg" }
+      { "name": "Скај појадок за двајца", "description": "комплет лепиња, кајмак, јајца на око, пршут, сланина, овчо сирење, панцероти, крем и џем", "price": 600, "image": "caesar.jpg" },
+      { "name": "Додатоци", "description": "кашкавал 50гр., сирење 50гр., сланина 30гр., печурки 50гр.", "price": 40, "image": "greek-salad.jpg" }
     ],
     "Ладни закуски": [
-      { "name": "Овчо сирење", "description": "100гр.", "price": 130, "image": "choco-cake.jpg" },
-      { "name": "Биено сирење", "description": "100гр.", "price": 130, "image": "choco-cake.jpg" },
-      { "name": "Пиперка во павлака", "description": "100гр", "price": 100, "image": "choco-cake.jpg" },
-      { "name": "Сирење роловано во сланина", "description": "сирење 100гр., сланина 50гр.", "price": 220, "image": "choco-cake.jpg" }
+      { "name": "Овчо сирење", "description": "100гр.", "price": 150, "image": "choco-cake.jpg" },
+      { "name": "Биено сирење", "description": "100гр.", "price": 170, "image": "choco-cake.jpg" },
+      { "name": "Пиперка во павлака", "description": "100гр", "price": 150, "image": "choco-cake.jpg" },
+      { "name": "Сирење роловано во сланина", "description": "сирење 100гр., сланина 50гр.", "price": 250, "image": "choco-cake.jpg" }
     ],
     "Топли закуски": [
-      { "name": "Пилешки прсти", "description": "350гр.", "price": 230, "image": "choco-cake.jpg" },
-      { "name": "Пилешки крилца", "description": "350гр.", "price": 220, "image": "choco-cake.jpg" },
-      { "name": "Фурнарини", "description": "тесто 200гр., 1 јајце, сусам 10гр.", "price": 120, "image": "choco-cake.jpg" },
-      { "name": "Фурнарини со кашкавал", "description": "тесто 200гр., 1 јајце, сусам 10гр., кашлавал 50гр.", "price": 150, "image": "choco-cake.jpg" },
+      { "name": "Пилешки прсти", "description": "350гр.", "price": 250, "image": "choco-cake.jpg" },
+      { "name": "Пилешки крилца", "description": "350гр.", "price": 250, "image": "choco-cake.jpg" },
+      { "name": "Фурнарини", "description": "тесто 200гр., 1 јајце, сусам 10гр.", "price": 130, "image": "choco-cake.jpg" },
+      { "name": "Фурнарини со кашкавал", "description": "тесто 200гр., 1 јајце, сусам 10гр., кашлавал 50гр.", "price": 170, "image": "choco-cake.jpg" },
       { "name": "Помфрит", "description": "300гр.", "price": 120, "image": "choco-cake.jpg" },
       { "name": "Помфрит со сирење", "description": "помфрит 300гр., сирење 50гр.", "price": 160, "image": "choco-cake.jpg" },
-      { "name": "Похована пирошка", "description": "300гр.", "price": 150, "image": "choco-cake.jpg" },
-      { "name": "Похована зденка", "description": "120гр.", "price": 150, "image": "choco-cake.jpg" },
-      { "name": "Печурки на скара", "description": "300гр.", "price": 140, "image": "choco-cake.jpg" },
-      { "name": "Тиквички", "description": "200гр.", "price": 150, "image": "choco-cake.jpg" },
-      { "name": "Лепиња со кајмак", "description": "", "price": 180, "image": "choco-cake.jpg" },
-      { "name": "Кашкавал", "description": "", "price": 150, "image": "choco-cake.jpg" }
+      { "name": "Похована пирошка", "description": "300гр.", "price": 160, "image": "choco-cake.jpg" },
+      { "name": "Похована зденка", "description": "120гр.", "price": 180, "image": "choco-cake.jpg" },
+      { "name": "Печурки на скара", "description": "250гр.", "price": 160, "image": "choco-cake.jpg" },
+      { "name": "Тиквички", "description": "200гр.", "price": 180, "image": "choco-cake.jpg" },
+      { "name": "Лепиња со кајмак", "description": "", "price": 220, "image": "choco-cake.jpg" },
+      { "name": "Похован кашкавал", "description": "100гр.", "price": 180, "image": "choco-cake.jpg" }
     ],
     "Салати": [
-      { "name": "Скај салата", "description": "марула 50гр., павлака 50гр., печен сусам 20гр., мајонез 20гр., кашкавал 40гр., шунка 50гр., пармезан 20гр.", "price": 200, "image": "choco-cake.jpg" },
-      { "name": "Шопска салата", "description": "домат 100гр., краставица 100гр., сирење 70гр., маслинки 20гр.", "price": 150, "image": "choco-cake.jpg" },
-      { "name": "Грчка салата", "description": "домат 100гр., краставица 80гр., сирење 70гр., маслинки 20гр., кромид 30гр.", "price": 160, "image": "choco-cake.jpg" },
-      { "name": "Македонска салата", "description": "домат 150гр., пиперка 10гр., кромид 30гр., магдонос 10гр.", "price": 180, "image": "choco-cake.jpg" },
-      { "name": "Цезар салата", "description": "марула 50гр., шери 50гр., пилешки стек 100гр., кашкавал 50гр., пармезан 20гр., тартар сос 30гр.", "price": 220, "image": "choco-cake.jpg" },
-      { "name": "Витаминска салата", "description": "цвекло 70гр., морков 70гр., зелка 70гр.", "price": 150, "image": "choco-cake.jpg" },
-      { "name": "Туна салата", "description": "марула 60гр., пченка 40гр., туна 100гр., маслинки 20гр., кромид 30гр.", "price": 200, "image": "choco-cake.jpg" }
+      { "name": "Скај салата", "description": "марула 50гр., павлака 50гр., печен сусам 20гр., мајонез 20гр., кашкавал 40гр., шунка 50гр., пармезан 20гр.", "price": 300, "image": "choco-cake.jpg" },
+      { "name": "Шопска салата", "description": "домат 100гр., краставица 100гр., сирење 70гр., маслинки 20гр.", "price": 180, "image": "choco-cake.jpg" },
+      { "name": "Грчка салата", "description": "домат 100гр., краставица 80гр., сирење 70гр., маслинки 20гр., кромид 30гр.", "price": 190, "image": "choco-cake.jpg" },
+      { "name": "Македонска салата", "description": "домат 150гр., пиперка 10гр., кромид 30гр., магдонос 10гр.", "price": 190, "image": "choco-cake.jpg" },
+      { "name": "Цезар салата", "description": "марула 50гр., шери 50гр., пилешки стек 100гр., кашкавал 50гр., пармезан 20гр., тартар сос 30гр.", "price": 270, "image": "choco-cake.jpg" },
+      { "name": "Витаминска салата", "description": "цвекло 70гр., морков 70гр., зелка 70гр.", "price": 150, "image": "choco-cake.jpg" }
     ],
     "Даски": [
-      { "name": "Мала похована даска", "description": "пилешки прсти 250гр., пирошка 200гр., зденка 60гр., кашкавал 60гр., похован кромид 30гр., печурки 100гр., похован компир 20гр.", "price": 600, "image": "slika2.jpg" },
-      { "name": "Голема похована даска", "description": "пилешки прсти 350гр., пирошка 250гр., зденка 120гр., кашкавал 120гр., похован кромид 40гр., похован компир 20гр.", "price": 900, "image": "choco-cake.jpg" },
-      { "name": "Мала ладна даска", "description": "шунка 60гр., врат 100гр., кулен 60гр., чајна 60гр., сирење 120гр., кашкавал 120гр.", "price": 500, "image": "choco-cake.jpg" },
-      { "name": "Голема ладна даска", "description": "шунка 100гр., врат 150гр., кулен 100гр., чајна 80гр., сирење 150гр., кашкавал 150гр.", "price": 800, "image": "choco-cake.jpg" },
-      { "name": "Мала мешана скара", "description": "пилешки стек 150гр., свинско каре 300гр., кебапи 150гр., плескавица 150гр., кобасица 200гр.", "price": 900, "image": "choco-cake.jpg" },
-      { "name": "Голема мешана скара", "description": "ребро 300гр., пилешки стек 300гр., свинско каре 300гр., кебапи 150гр., плескавица 150гр., тенка кобасица 200гр., дебела кобасица 200гр.", "price": 1300, "image": "choco-cake.jpg" }
+      { "name": "Похована даска", "description": "пилешки прсти 350гр., пирошка 250гр., зденка 100гр., кашкавал 120гр., печирки 100гр., похован кромид 40гр., похован компир 40гр.", "price": 1000, "image": "choco-cake.jpg" },
+      { "name": "Ладна даска", "description": "шунка 100гр., врат 150гр., кулен 100гр., чајна 80гр., сирење 150гр., кашкавал 150гр.", "price": 900, "image": "choco-cake.jpg" },
+      { "name": "Мешана скара", "description": "ребро 350гр., пилешки стек 300гр., свинско каре 350гр., шарска плескавица 400гр., тенок колбас 300гр.", "price": 1500, "image": "choco-cake.jpg" }
     ],
     "Тестенини": [
-      { "name": "Карбонара", "description": "тестенини 250гр., хопла 200гр., кашкавал 50гр., сланина 50гр., пармезан 20гр.", "price": 250, "image": "choco-cake.jpg" },
-      { "name": "Болоњезе", "description": "тестенини 250гр., пелети 200гр., мелено месо 100гр.", "price": 240, "image": "choco-cake.jpg" }
+      { "name": "Карбонара", "description": "тестенини 200гр., крема за готвење 200гр., сланина 100гр., пармезан 50гр.", "price": 300, "image": "choco-cake.jpg" },
+      { "name": "Болоњезе", "description": "тестенини 200гр., болоњезе сос 200гр., мелено месо 100гр.", "price": 300, "image": "choco-cake.jpg" }
     ],
     "Сендвичи": [
       { "name": "Скај бургер", "description": "лепче 150гр., плескавица 150гр., помфрит 50гр., 1 јајце печено, чедар + кајмак, корнишони", "price": 250, "image": "choco-cake.jpg" },
       { "name": "Хамбургер", "description": "лепче 150гр., плескавица 150гр., помфрит 50гр.", "price": 200, "image": "choco-cake.jpg" },
       { "name": "Чикен бургер", "description": "лепче 150гр., пилешки стек 150гр., помфрит 50гр.", "price": 200, "image": "choco-cake.jpg" },
-      { "name": "Чизбургер", "description": "лепче 150гр., плескавица 150гр., помфрит 50гр., кашкавал 50гр.", "price": 220, "image": "choco-cake.jpg" },
-      { "name": "Криспи бургер", "description": "лепче 150гр., похиван стек 150гр., помфрит 50гр.", "price": 220, "image": "choco-cake.jpg" },
+      { "name": "Чизбургер", "description": "лепче 150гр., плескавица 150гр., помфрит 50гр., кашкавал 50гр.", "price": 230, "image": "choco-cake.jpg" },
+      { "name": "Криспи бургер", "description": "лепче 150гр., похиван стек 150гр., помфрит 50гр.", "price": 230, "image": "choco-cake.jpg" },
       { "name": "Гиро", "description": "", "price": 200, "image": "choco-cake.jpg" }
     ],
-    "Тост": [
-      { "name": "Тост шунка", "description": "тост лепче 250гр., кашкавал 80гр., шунка 50гр.", "price": 140, "image": "choco-cake.jpg" },
-      { "name": "Тост кулен", "description": "тост лепче 250гр., кашкавал 80гр., кулен 50гр.", "price": 150, "image": "choco-cake.jpg" },
-      { "name": "Тост врат", "description": "тост лепче 250гр., кашкавал 80гр., врат 50гр.", "price": 160, "image": "choco-cake.jpg" },
-      { "name": "Тост пршут", "description": "тост лепче 250гр., кашкавал 80гр., пршут 50гр.", "price": 200, "image": "choco-cake.jpg" },
-      { "name": "Додаток", "description": "помфрит 50гр., печурки 30гр.", "price": 40, "image": "choco-cake.jpg" }
-    ],
-    "Пастрмајлии": [
-      { "name": "Свинска мала", "description": "тесто 200гр., свинско месо 150гр.", "price": 180, "image": "choco-cake.jpg" },
-      { "name": "Свинска голема", "description": "тесто 300гр., свинско месо 220гр.", "price": 250, "image": "choco-cake.jpg" },
-      { "name": "Пилешка мала", "description": "тесто 200гр., пилешки стек 150гр.", "price": 180, "image": "choco-cake.jpg" },
-      { "name": "Пилешка голема", "description": "тесто 300гр., пилешки стек 220гр.", "price": 250, "image": "choco-cake.jpg" },
-      { "name": "Димена мала", "description": "тесто 200гр., димено месо 150гр.", "price": 230, "image": "choco-cake.jpg" },
-      { "name": "Димена голема", "description": "тесто 300гр., димено месо 220гр.", "price": 300, "image": "choco-cake.jpg" }
+     "Пастрмајлии": [
+      { "name": "Свинска мала", "description": "тесто 200гр., свинско месо 150гр.", "price": 190, "image": "choco-cake.jpg" },
+      { "name": "Свинска голема", "description": "тесто 300гр., свинско месо 220гр.", "price": 260, "image": "choco-cake.jpg" },
+      { "name": "Пилешка мала", "description": "тесто 200гр., пилешки стек 150гр.", "price": 190, "image": "choco-cake.jpg" },
+      { "name": "Пилешка голема", "description": "тесто 300гр., пилешки стек 220гр.", "price": 260, "image": "choco-cake.jpg" },
+      { "name": "Димена мала", "description": "тесто 200гр., димено месо 150гр.", "price": 240, "image": "choco-cake.jpg" },
+      { "name": "Димена голема", "description": "тесто 300гр., димено месо 220гр.", "price": 320, "image": "choco-cake.jpg" },
+      { "name": "Додатоци", "description": "кашкавал, јајце", "price": 40, "image": "choco-cake.jpg" }
     ],
     "Пици": [
-      { "name": "Скај пица", "description": "доматен сос, кашкавал, врат, сланина, пиперка", "price": "220/350/600", "image": "choco-cake.jpg" },
-      { "name": "Капричиоза", "description": "доматен сос, кашкавал, шунка, печурка", "price": "180/270/500", "image": "choco-cake.jpg" },
-      { "name": "Маргарита", "description": "доматен сос, кашкавал", "price": "160/240/420", "image": "choco-cake.jpg" },
-      { "name": "Наполитана", "description": "доматен сос, кашкавал, печурки", "price": "170/250/450", "image": "choco-cake.jpg" },
-      { "name": "Дијавола", "description": "доматен сос, кашкавал, кулен", "price": "200/300/550", "image": "choco-cake.jpg" },
-      { "name": "Кватро формаџи", "description": "доматен сос, кашкавал, пармезан, сино сирење", "price": "230/350/600", "image": "choco-cake.jpg" },
-      { "name": "Веге пица", "description": "доматен сос, кашкавал, домат, пиперка, печурки, маслинки", "price": "180/270/500", "image": "choco-cake.jpg" },
-      { "name": "Пршут", "description": "доматен сос, кашкавал, пршут", "price": "250/380/650", "image": "choco-cake.jpg" },
-      { "name": "Калабрезе", "description": "доматен сос, кашкавал, лук, магдонос", "price": "170/250/450", "image": "choco-cake.jpg" },
-      { "name": "Туна", "description": "доматен сос, кашкавал, туна, маслинки, кромид", "price": "200/300/550", "image": "choco-cake.jpg" }
+      { "name": "Скај пица", "description": "доматен сос, кашкавал, врат, сланина, пиперка", "price": "350/600", "image": "choco-cake.jpg" },
+      { "name": "Капричиоза", "description": "доматен сос, кашкавал, шунка, печурка", "price": "290/500", "image": "choco-cake.jpg" },
+      { "name": "Маргарита", "description": "доматен сос, кашкавал", "price": "260/450", "image": "choco-cake.jpg" },
+      { "name": "Наполитана", "description": "доматен сос, кашкавал, печурки", "price": "270/470", "image": "choco-cake.jpg" },
+      { "name": "Дијавола", "description": "доматен сос, кашкавал, кулен", "price": "320/550", "image": "choco-cake.jpg" },
+      { "name": "Кватро формаџи", "description": "доматен сос, кашкавал, пармезан, сино сирење", "price": "350/600", "image": "choco-cake.jpg" },
+      { "name": "Веге пица", "description": "доматен сос, кашкавал, домат, пиперка, печурки, маслинки", "price": "290/500", "image": "choco-cake.jpg" }
     ],
     "Главни јадења": [
-      { "name": "Пилешко во бел сос", "description": "пилешки стек 150гр., хопла, печурки, соја сос, помфрит гарнир", "price": 260, "image": "choco-cake.jpg" },
-      { "name": "Пилешко во кари сос", "description": "пилешки стек 150гр., хопла, кари сос, помфрит гарнир", "price": 250, "image": "choco-cake.jpg" },
-      { "name": "Пилешки стек", "description": "350гр.", "price": 200, "image": "choco-cake.jpg" },
-      { "name": "Плескавица", "description": "250гр.", "price": 200, "image": "choco-cake.jpg" },
-      { "name": "Шарска плескавица", "description": "400гр.", "price": 260, "image": "choco-cake.jpg" },
-      { "name": "Плескавица во тесто со кајмак", "description": "тесто 150гр., мелено месо 150гр., кајмак, кашкавал", "price": 300, "image": "choco-cake.jpg" },
-      { "name": "Пилешки увијач", "description": "200гр.", "price": 220, "image": "choco-cake.jpg" },
-      { "name": "Свински увијач", "description": "200гр.", "price": 220, "image": "choco-cake.jpg" },
-      { "name": "Ребро", "description": "300гр.", "price": 270, "image": "choco-cake.jpg" },
+      { "name": "Пилешко во бел сос", "description": "пилешки стек 150гр., хопла, печурки, соја сос, помфрит гарнир", "price": 290, "image": "choco-cake.jpg" },
+      { "name": "Пилешко во кари сос", "description": "пилешки стек 150гр., хопла, кари сос, помфрит гарнир", "price": 280, "image": "choco-cake.jpg" },
+      { "name": "Пилешки стек", "description": "300гр.", "price": 230, "image": "choco-cake.jpg" },
+      { "name": "Плескавица", "description": "200гр.", "price": 230, "image": "choco-cake.jpg" },
+      { "name": "Шарска плескавица", "description": "400гр.", "price": 290, "image": "choco-cake.jpg" },
+      { "name": "Плескавица во тесто со кајмак", "description": "тесто 200гр., мелено месо 200гр., кајмак, кашкавал", "price": 350, "image": "choco-cake.jpg" },
+      { "name": "Пилешки увијач", "description": "200гр.", "price": 250, "image": "choco-cake.jpg" },
+      { "name": "Свински увијач", "description": "200гр.", "price": 250, "image": "choco-cake.jpg" },
+      { "name": "Ребро", "description": "350гр.", "price": 290, "image": "choco-cake.jpg" },
       { "name": "Ребро во фурна", "description": "1кг.", "price": 1100, "image": "choco-cake.jpg" },
-      { "name": "Свинска вешалица", "description": "300гр.", "price": 270, "image": "choco-cake.jpg" },
-      { "name": "Димена вешалица", "description": "250гр.", "price": 300, "image": "choco-cake.jpg" },
-      { "name": "Тенок колбас", "description": "200гр.", "price": 220, "image": "choco-cake.jpg" }
+      { "name": "Свинска вешалица", "description": "300гр.", "price": 320, "image": "choco-cake.jpg" },
+      { "name": "Димена вешалица", "description": "250гр.", "price": 350, "image": "choco-cake.jpg" },
+      { "name": "Тенок колбас", "description": "250гр.", "price": 270, "image": "choco-cake.jpg" }
     ],
-    "Риба и морски плодови": [
-      { "name": "Крап", "description": "1кг.", "price": 800, "image": "choco-cake.jpg" },
-      { "name": "Пастрмка", "description": "1кг.", "price": 800, "image": "choco-cake.jpg" },
-      { "name": "Ципура", "description": "1кг.", "price": 900, "image": "choco-cake.jpg" },
-      { "name": "Лигњи", "description": "300гр.", "price": 280, "image": "choco-cake.jpg" },
-      { "name": "Лаврак", "description": "1кг.", "price": 900, "image": "choco-cake.jpg" },
-      { "name": "Ракчиња на скара", "description": "250гр.", "price": 400, "image": "choco-cake.jpg" }
+    "Риба": [
+      { "name": "Крап", "description": "1кг.", "price": 900, "image": "choco-cake.jpg" },
+      { "name": "Пастрмка", "description": "1кг.", "price": 900, "image": "choco-cake.jpg" }
     ],
     "Десерти": [
-      { "name": "Нутела палачинка", "description": "тесто 60гр., нутела крем 50гр., плазма 20гр., банана 20гр.", "price": 180, "image": "choco-cake.jpg" },
-      { "name": "Палачинка", "description": "тесто 60гр., крем 50гр.", "price": 120, "image": "choco-cake.jpg" }
+      { "name": "Нутела палачинка", "description": "", "price": 180, "image": "choco-cake.jpg" },
+      { "name": "Палачинка", "description": "", "price": 120, "image": "choco-cake.jpg" }
     ],
     "Апетисани": [
       { "name": "Бадем", "description": "100гр.", "price": 180, "image": "choco-cake.jpg" },
@@ -117,69 +100,62 @@
   },
   "drinks": {
     "Вода": [
-      { "name": "Роса", "description": "250мл.", "price": 60, "image": "mojito.jpg"},
-      { "name": "Роса", "description": "750мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Kњаз Милош", "description": "250мл.", "price": 60, "image": "mojito.jpg"},
-      { "name": "Књаз Милош", "description": "750мл.", "price": 100, "image": "mojito.jpg"}
+      { "name": "Роса", "description": "330мл.", "price": 70, "image": "mojito.jpg"},
+      { "name": "Роса", "description": "750мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Kњаз Милош", "description": "330мл.", "price": 70, "image": "mojito.jpg"},
+      { "name": "Књаз Милош", "description": "750мл.", "price": 120, "image": "mojito.jpg"}
     ],
     "Кафе и топли напитоци": [
       { "name": "Еспресо", "description": "", "price": 80, "image": "mojito.jpg"},
       { "name": "Макијато", "description": "", "price": 90, "image": "mojito.jpg"},
       { "name": "Капучино", "description": "", "price": 100, "image": "mojito.jpg"},
-      { "name": "Фредо еспресо", "description": "", "price": 110, "image": "mojito.jpg"},
-      { "name": "Фредо капучино", "description": "", "price": 130, "image": "mojito.jpg"},
-      { "name": "Американо", "description": "", "price": 80, "image": "mojito.jpg"},
+      { "name": "Фредо еспресо", "description": "", "price": 120, "image": "mojito.jpg"},
+      { "name": "Фредо капучино", "description": "", "price": 150, "image": "mojito.jpg"},
       { "name": "Лате", "description": "", "price": 110, "image": "mojito.jpg"},
-      { "name": "Нескафе", "description": "", "price": 100, "image": "mojito.jpg"},
-      { "name": "Нескафе со вкус", "description": "", "price": 120, "image": "mojito.jpg"},
+      { "name": "Нескафе", "description": "", "price": 120, "image": "mojito.jpg"},
       { "name": "Чај", "description": "", "price": 70, "image": "mojito.jpg"},
-      { "name": "Топло чоколадо", "description": "200мл.", "price": 120, "image": "mojito.jpg"}
+      { "name": "Топло чоколадо", "description": "", "price": 130, "image": "mojito.jpg"}
     ],
     "Безалкохолни пијалоци": [
-      { "name": "Кока кола", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Кока кола зеро", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Фанта", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Швепс", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Спрајт", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Тоник", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Пепси", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Некст негазиран", "description": "200мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Миринда", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Газоза", "description": "330мл.", "price": 80, "image": "mojito.jpg"},
+      { "name": "Кока кола", "description": "250мл.", "price": 90, "image": "mojito.jpg"},
+      { "name": "Фанта", "description": "250мл.", "price": 90, "image": "mojito.jpg"},
+      { "name": "Швепс", "description": "250мл.", "price": 90, "image": "mojito.jpg"},
+      { "name": "Спрајт", "description": "250мл.", "price": 90, "image": "mojito.jpg"},
+      { "name": "Тоник", "description": "250мл.", "price": 90, "image": "mojito.jpg"},
+      { "name": "Негазиран сок", "description": "200мл.", "price": 100, "image": "mojito.jpg"},
       { "name": "Ред бул", "description": "330мл.", "price": 200, "image": "mojito.jpg"}
     ],
     "Пиво": [
-      { "name": "Скопско", "description": "330мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Скопско смут", "description": "330мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Златен даб", "description": "330мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Хајнекен", "description": "400мл.", "price": 150, "image": "mojito.jpg"},
-      { "name": "Туборг", "description": "330мл.", "price": 150, "image": "mojito.jpg"},
-      { "name": "Корона", "description": "330мл.", "price": 200, "image": "mojito.jpg"}
+      { "name": "Скопско", "description": "500мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Скопско смут", "description": "500мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Хајнекен", "description": "500мл.", "price": 150, "image": "mojito.jpg"},
+      { "name": "Бира морети", "description": "400мл.", "price": 120, "image": "mojito.jpg"}
     ],
     "Алкохолни пијалоци": [
-      { "name": "Ракија жолта Тиквеш", "description": "40мл.", "price": 80, "image": "mojito.jpg"},
+      { "name": "Ракија жолта Тиквеш", "description": "40мл.", "price": 90, "image": "mojito.jpg"},
       { "name": "Узо", "description": "40мл.", "price": 80, "image": "mojito.jpg"},
-      { "name": "Вотка Смирноф", "description": "40мл.", "price": 799, "image": "mojito.jpg"},
-      { "name": "Вотка Абсолут", "description": "40мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Џин Танкерај + Бомбај", "description": "40мл.", "price": 180, "image": "mojito.jpg"},
-      { "name": "Џин пинк + тоник", "description": "40мл.", "price": 180, "image": "mojito.jpg"},
-      { "name": "Џин тоник промо", "description": "200мл.", "price": 150, "image": "mojito.jpg"},
+      { "name": "Вотка Смирноф", "description": "40мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Џин Бомбај", "description": "40мл.", "price": 200, "image": "mojito.jpg"},
+      { "name": "Џин тоник", "description": "200мл.", "price": 200, "image": "mojito.jpg"},
       { "name": "Текила", "description": "40мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Бел рум", "description": "40мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Црн рум", "description": "40мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Коњак", "description": "40мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Хенеси В.С.", "description": "40мл.", "price": 300, "image": "mojito.jpg"},
-      { "name": "Џони Вокер", "description": "40мл.", "price": 200, "image": "mojito.jpg"},
-      { "name": "Џони Блек", "description": "40мл.", "price": 280, "image": "mojito.jpg"},
-      { "name": "Џи-Би", "description": "40мл.", "price": 200, "image": "mojito.jpg"},
-      { "name": "Џек Даниелс", "description": "40мл.", "price": 220, "image": "mojito.jpg"}
+      { "name": "Рум", "description": "40мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Коњак", "description": "40мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Хенеси В.С.", "description": "40мл.", "price": 350, "image": "mojito.jpg"},
+      { "name": "Џони Вокер", "description": "40мл.", "price": 220, "image": "mojito.jpg"},
+      { "name": "Џони Блек", "description": "40мл.", "price": 300, "image": "mojito.jpg"},
+      { "name": "Џи-Би", "description": "40мл.", "price": 220, "image": "mojito.jpg"},
+      { "name": "Џек Даниелс", "description": "40мл.", "price": 250, "image": "mojito.jpg"},
+      { "name": "Џејмисон", "description": "40мл.", "price": 220, "image": "mojito.jpg"},
+      { "name": "Макалан 12", "description": "40мл.", "price": 400, "image": "mojito.jpg"},
+      { "name": "Гленфидик 12", "description": "40мл.", "price": 300, "image": "mojito.jpg"},
+      { "name": "Гленливет", "description": "40мл.", "price": 300, "image": "mojito.jpg"},
+      { "name": "Гленморанж", "description": "40мл.", "price": 350, "image": "mojito.jpg"}
     ],
     "Ликери": [
-      { "name": "Јегер", "description": "40мл.", "price": 150, "image": "mojito.jpg"},
-      { "name": "Пелинковац", "description": "40мл.", "price": 100, "image": "mojito.jpg"},
-      { "name": "Кампари", "description": "40мл.", "price": 150, "image": "mojito.jpg"},
-      { "name": "Мартини", "description": "60мл.", "price": 150, "image": "mojito.jpg"},
-      { "name": "Бејлис", "description": "40мл.", "price": 150, "image": "mojito.jpg"}
+      { "name": "Јегер", "description": "40мл.", "price": 170, "image": "mojito.jpg"},
+      { "name": "Пелинковац", "description": "40мл.", "price": 120, "image": "mojito.jpg"},
+      { "name": "Мартини", "description": "60мл.", "price": 200, "image": "mojito.jpg"},
+      { "name": "Бејлис", "description": "40мл.", "price": 200, "image": "mojito.jpg"}
     ],
     "Вино": [
       { "name": "Александрија", "description": "200мл.", "price": 200, "image": "mojito.jpg"},
@@ -188,7 +164,7 @@
       { "name": "Траминец", "description": "750мл.", "price": 800, "image": "mojito.jpg"},
       { "name": "Темјаника", "description": "200мл.", "price": 200, "image": "mojito.jpg"},
       { "name": "Темјаника", "description": "750мл.", "price": 800, "image": "mojito.jpg"},
-      { "name": "Александрија куве", "description": "200мл.", "price": 220, "image": "mojito.jpg"},
+      { "name": "Александрија куве", "description": "200мл.", "price": 250, "image": "mojito.jpg"},
       { "name": "Александрија куве", "description": "750мл.", "price": 1000, "image": "mojito.jpg"},
       { "name": "Т'га за југ", "description": "200мл.", "price": 200, "image": "mojito.jpg"},
       { "name": "Т'га за југ", "description": "750мл.", "price": 800, "image": "mojito.jpg"},
