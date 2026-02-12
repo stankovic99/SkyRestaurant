@@ -3,26 +3,7 @@ let currentIndex = 0;
 const bg1 = document.getElementById("bg1");
 const bg2 = document.getElementById("bg2");
 const homeSection = document.getElementById("home");
-const loader = document.querySelector(".loader");
 
-// Preload images
-function preloadImages(imageArray, callback) {
-  let loadedCount = 0;
-  imageArray.forEach(src => {
-    const img = new Image();
-    img.src = src;
-    img.onload = () => {
-      loadedCount++;
-      if (loadedCount === imageArray.length) callback();
-    };
-    img.onerror = () => {
-      loadedCount++; // Count even if error to avoid hanging
-      if (loadedCount === imageArray.length) callback();
-    };
-  });
-}
-
-// Update background function
 function updateBackground() {
   let nextIndex = (currentIndex + 1) % images.length;
 
@@ -35,26 +16,33 @@ function updateBackground() {
     bg1.classList.add("opacity-100");
     bg2.classList.remove("opacity-100");
     currentIndex = nextIndex;
-  }, 1500); // Matches fade duration
+  }, 1500);
 }
 
-// Initialize
-preloadImages(images, () => {
-  // Hide loader and show section
-  loader.style.display = "none";
-  homeSection.classList.add("loaded");
-  // Set initial image and start slideshow
-  bg1.style.backgroundImage = `url(${images[currentIndex]})`;
-  bg1.classList.add("opacity-100");
-  setInterval(updateBackground, 3000);
-});
-// Auto-change every 5s
 setInterval(updateBackground, 3000);
 
-// Initialize first image
 bg1.style.backgroundImage = `url(${images[currentIndex]})`;
 bg1.classList.add("opacity-100");
 
+function toggleText() {
+  const moreText = document.getElementById('more-text');
+  const button = document.getElementById('toggle-button');
+
+  const expanded = button.dataset.expanded === "true";
+
+  if (expanded) {
+    moreText.classList.add('hidden');
+    button.dataset.expanded = "false";
+    button.dataset.i18n = "about.showMore";
+  } else {
+    moreText.classList.remove('hidden');
+    button.dataset.expanded = "true";
+    button.dataset.i18n = "about.showLess";
+  }
+
+  // re-translate only changed keys
+  applyTranslations();
+}
 
 //DOM
 document.addEventListener("DOMContentLoaded", function () {
@@ -155,14 +143,22 @@ document.addEventListener("DOMContentLoaded", function () {
       // Show More/Less functionality
       if (images.length > INITIAL_VISIBLE) {
         toggleGalleryBtn.classList.remove('hidden');
+        toggleGalleryBtn.dataset.expanded = "false";
 
         toggleGalleryBtn.addEventListener('click', () => {
           isExpanded = !isExpanded;
+
           hiddenItems.forEach(item => {
             item.classList.toggle('hidden', !isExpanded);
           });
-          toggleGalleryBtn.textContent = isExpanded ? 'Прикажи помалку' : 'Прикажи повеќе';
-        });
+
+          toggleGalleryBtn.dataset.expanded = isExpanded ? "true" : "false";
+          toggleGalleryBtn.dataset.i18n = isExpanded
+            ? "gallery.showLess"
+            : "gallery.showMore";
+
+          applyTranslations();
+          });
       }
 
     } catch (error) {
@@ -176,11 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const mobileMenu = document.getElementById("mobile-menu");
   const hamburger = document.getElementById("hamburger");
-
-  const menuItem = document.getElementById("menu-item");
-  const menuButton = document.getElementById("menu-button");
-  const menuDropdown = document.getElementById("menu-dropdown");
-  const menuArrow = document.getElementById("menu-arrow");
   let lastScrollTop = 0;
 
   // Smooth scrolling for navigation links
@@ -227,40 +218,4 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenu.classList.add("hidden");
     }
   });
-
-  // Mobile: Show dropdown on click
-  menuButton.addEventListener("click", function (event) {
-    event.stopPropagation(); // Prevents click from closing it immediately
-    const isHidden = menuDropdown.classList.contains("hidden");
-    menuDropdown.classList.toggle("hidden");
-
-    // Rotate arrow smoothly
-    menuArrow.style.transition = "transform 0.3s ease";
-    menuArrow.style.transform = isHidden ? "rotate(180deg)" : "rotate(0deg)";
-  });
-
-  // Close dropdown when clicking outside (for mobile)
-  document.addEventListener("click", function (event) {
-    if (!menuItem.contains(event.target)) {
-      menuDropdown.classList.add("hidden");
-      menuArrow.style.transform = "rotate(0deg)";
-    }
-  });
-  
-
 });
-
-function toggleText() {
-  const moreText = document.getElementById('more-text');
-  const button = document.getElementById('toggle-button');
-
-  const isHidden = moreText.classList.contains('hidden');
-
-  if (isHidden) {
-    moreText.classList.remove('hidden');
-    button.textContent = 'Прикажи помалку';
-  } else {
-    moreText.classList.add('hidden');
-    button.textContent = 'Прикажи повеќе';
-  }
-}

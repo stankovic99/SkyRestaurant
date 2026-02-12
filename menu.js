@@ -1,5 +1,25 @@
 $(document).ready(function () {
     const INITIAL_TYPE = 'food';
+    const defaultLang = 'mk';
+
+    let currentLang = localStorage.getItem('lang') || defaultLang;
+    const fileName = currentLang === 'en' ? 'en-menu.json' : 'mk-menu.json';
+
+    window.addEventListener('storage', function (e) {
+        if (e.key === 'lang') {
+            location.reload();
+        }
+    });
+
+    const desktopBtn = document.getElementById('lang-toggle-desktop');
+    const mobileBtn = document.getElementById('lang-toggle-mobile');
+
+    function reloadAfterToggle() {
+        setTimeout(() => location.reload(), 0);
+    }
+
+    if (desktopBtn) desktopBtn.addEventListener('click', reloadAfterToggle);
+    if (mobileBtn) mobileBtn.addEventListener('click', reloadAfterToggle);
 
     function renderSubcategories(type, jsonData) {
         const $scrollContainer = $('#subcategoryScroll');
@@ -19,22 +39,40 @@ $(document).ready(function () {
         const $grid = $('#productGrid');
         $grid.empty();
         const items = jsonData[type][category];
-        items.forEach(item => {
-            const $item = $(`
-              <div class="flex bg-white rounded-lg shadow-md overflow-hidden">
-                  <div class="p-4 flex-1">
-                      <h3 class="text-lg font-bold uppercase text-darkbrown">${item.name}</h3>
-                      <p class="text-sm text-dark pt-2">${item.description}</p>
-                      <p class="text-darkbrown font-medium pt-2">${item.price} ден.</p>
-                  </div>
-              </div>
-          `);
-            $grid.append($item);
-        });
+        if(currentLang == 'mk')
+        {
+          items.forEach(item => {
+              const $item = $(`
+                <div class="flex bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 flex-1">
+                        <h3 class="text-lg font-bold uppercase text-darkbrown">${item.name}</h3>
+                        <p class="text-sm text-dark pt-2">${item.description}</p>
+                        <p class="text-darkbrown font-medium pt-2">${item.price} ден.</p>
+                    </div>
+                </div>
+            `);
+              $grid.append($item);
+          });
+        }
+        else
+        {
+          items.forEach(item => {
+              const $item = $(`
+                <div class="flex bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 flex-1">
+                        <h3 class="text-lg font-bold uppercase text-darkbrown">${item.name}</h3>
+                        <p class="text-sm text-dark pt-2">${item.description}</p>
+                        <p class="text-darkbrown font-medium pt-2">${item.price} den.</p>
+                    </div>
+                </div>
+            `);
+              $grid.append($item);
+          });
+        }
     }
 
-
-    $.getJSON('menu.json', function (jsonData) {
+    $.getJSON(fileName, function (jsonData) {
+      
         // Initial load
         $('#categoryTabs button[data-type="food"]').addClass('active-tab');
         renderSubcategories(INITIAL_TYPE, jsonData);
@@ -95,11 +133,6 @@ $(document).ready(function () {
     const navbar = document.getElementById("navbar");
     const mobileMenu = document.getElementById("mobile-menu");
     const hamburger = document.getElementById("hamburger");
-  
-    const menuItem = document.getElementById("menu-item");
-    const menuButton = document.getElementById("menu-button");
-    const menuDropdown = document.getElementById("menu-dropdown");
-    const menuArrow = document.getElementById("menu-arrow");
     let lastScrollTop = 0;
   
     // Smooth scrolling for navigation links
@@ -147,22 +180,4 @@ $(document).ready(function () {
       }
     });
   
-    // Mobile: Show dropdown on click
-    menuButton.addEventListener("click", function (event) {
-      event.stopPropagation(); // Prevents click from closing it immediately
-      const isHidden = menuDropdown.classList.contains("hidden");
-      menuDropdown.classList.toggle("hidden");
-  
-      // Rotate arrow smoothly
-      menuArrow.style.transition = "transform 0.3s ease";
-      menuArrow.style.transform = isHidden ? "rotate(180deg)" : "rotate(0deg)";
-    });
-  
-    // Close dropdown when clicking outside (for mobile)
-    document.addEventListener("click", function (event) {
-      if (!menuItem.contains(event.target)) {
-        menuDropdown.classList.add("hidden");
-        menuArrow.style.transform = "rotate(0deg)";
-      }
-    });
 });
