@@ -133,7 +133,6 @@ $(document).ready(function () {
     const navbar = document.getElementById("navbar");
     const mobileMenu = document.getElementById("mobile-menu");
     const hamburger = document.getElementById("hamburger");
-    let lastScrollTop = 0;
   
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -153,19 +152,6 @@ $(document).ready(function () {
   
         mobileMenu.classList.add("hidden");
       });
-    });
-  
-    // Hide/show navbar on scroll with smooth transition
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.scrollY;
-      if (scrollTop > lastScrollTop) {
-        navbar.style.transition = "transform 0.4s ease-in-out";
-        navbar.style.transform = "translateY(-100%)";
-      } else {
-        navbar.style.transition = "transform 0.4s ease-in-out";
-        navbar.style.transform = "translateY(0)";
-      }
-      lastScrollTop = scrollTop;
     });
   
     // Toggle mobile menu
